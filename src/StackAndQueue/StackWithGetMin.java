@@ -20,7 +20,7 @@ public class StackWithGetMin extends Stack <Integer> {
 
     public Integer push(Integer e) {
 
-        if (minStack.empty()) {
+        if (minStack.isEmpty()) {
             minStack.push(e);
         }
 
@@ -34,7 +34,7 @@ public class StackWithGetMin extends Stack <Integer> {
 
     public Integer pop() {
 
-        if (empty()) {
+        if (isEmpty()) {
 
             throw new RuntimeException("The stack is empty.");
         }
@@ -49,10 +49,11 @@ public class StackWithGetMin extends Stack <Integer> {
 
     public Integer getMin() {
 
-        if (minStack.empty()) {
+        if (minStack.isEmpty()) {
 
             throw new RuntimeException("The stack is empty.");
         }
+
         return minStack.peek();
     }
 }
