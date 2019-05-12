@@ -9,54 +9,56 @@ import java.util.Stack;
  */
 public class QueueByTwoStacks {
 
-    private Stack<Integer> data;
-    private Stack<Integer> tmp;
+    // A stack only for push
+    private Stack<Integer> pushStack;
+
+    // Another stack only for pop
+    private Stack<Integer> popStack;
 
     public QueueByTwoStacks() {
 
-        this.data = new Stack<>();
-        this.tmp = new Stack<>();
+        this.pushStack = new Stack<>();
+        this.popStack = new Stack<>();
     }
 
     public void add(Integer e) {
 
-        data.push(e);
+        pushStack.push(e);
     }
 
+    /**
+     * Push to popStack ONLY when the popStack is empty
+     * @return Fifo, first element in the queue
+     */
     public int poll() {
 
-        if (data.isEmpty()) {
+        if (pushStack.isEmpty() && popStack.isEmpty()) {
 
             throw new RuntimeException("The queue is empty.");
+        } else if (popStack.isEmpty()) {
+
+            while (!pushStack.isEmpty()) {
+
+                popStack.push(pushStack.pop());
+            }
         }
 
-        copyToTmp(data, tmp);
-        int rst  = tmp.pop();
-        copyToTmp(tmp, data);
-
-        return rst;
+        return popStack.pop();
     }
 
     public int peek() {
 
-        if (data.isEmpty()) {
+        if (pushStack.isEmpty() && popStack.isEmpty()) {
 
             throw new RuntimeException("The queue is empty.");
+        } else if (popStack.isEmpty()) {
+
+            while (!pushStack.isEmpty()) {
+
+                popStack.push(pushStack.pop());
+            }
         }
 
-        copyToTmp(data, tmp);
-        int rst  = tmp.peek();
-        copyToTmp(tmp, data);
-
-        return rst;
-    }
-
-    private void copyToTmp(Stack from, Stack to) {
-
-        to.clear();
-        while(!from.isEmpty()) {
-
-            to.push(from.pop());
-        }
+        return popStack.peek();
     }
 }
