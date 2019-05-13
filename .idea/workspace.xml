@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e468b0cc-519a-4c69-884f-f67c50cce580" name="Default Changelist" comment="push-stack &amp; pop-stack">
+    <list default="true" id="e468b0cc-519a-4c69-884f-f67c50cce580" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/ReverseAStackByRecursion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/QueueByTwoStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/QueueByTwoStacks.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,20 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/StackWithGetMin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/QueueByTwoStacks.java">
+        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/ReverseAStackByRecursion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="456">
+              <caret line="24" column="39" selection-start-line="9" selection-end-line="36" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -57,6 +49,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/StackAndQueue/StackWithGetMin.java" />
         <option value="$PROJECT_DIR$/src/StackAndQueue/QueueByTwoStacks.java" />
+        <option value="$PROJECT_DIR$/src/StackAndQueue/TransformAStackByRecursion.java" />
+        <option value="$PROJECT_DIR$/src/StackAndQueue/ReverseAStackByRecursion.java" />
       </list>
     </option>
   </component>
@@ -130,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557673378520</updated>
-      <workItem from="1557673379805" duration="4143000" />
+      <workItem from="1557673379805" duration="6185000" />
     </task>
     <task id="LOCAL-00001" summary="Queue by 2 stacks">
       <created>1557682823263</created>
@@ -139,15 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557682823263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="push-stack &amp; pop-stack">
+      <created>1557687525428</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557687525428</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4143000" />
+    <option name="totallyTimeSpent" value="6185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -155,7 +155,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17095852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17095852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Elm Compiler" />
@@ -203,7 +203,14 @@
     <entry file="file://$PROJECT_DIR$/src/StackAndQueue/QueueByTwoStacks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/ReverseAStackByRecursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="39" selection-start-line="9" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
